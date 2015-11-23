@@ -1,0 +1,106 @@
+
+Code Book
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The mean and the standard deviation (std) of these variables were estimated from the signals.
+
+
+
+VARIABLES:
+subject	Subject identifier (1-30)
+actlab	Activity label
+
+	All remaining variables are normalized and bounded within [-1,1]
+tbodyacc-mean()-x	Mean bodily acceleration time signal in x dimension
+tbodyacc-mean()-y	Mean bodily acceleration time signal in y dimension
+tbodyacc-mean()-z	Mean bodily acceleration time signal in z dimension
+tbodyacc-std()-x	Standard deviation of bodily acceleration time signal in x dimension
+tbodyacc-std()-y	Standard deviation of bodily acceleration time signal in y dimension
+tbodyacc-std()-z	Standard deviation of bodily acceleration time signal in z dimension
+tgravityacc-mean()-x	Mean gravity acceleration time signal in x dimension
+tgravityacc-mean()-y	Mean gravity acceleration time signal in y dimension
+tgravityacc-mean()-z	Mean gravity acceleration time signal in z dimension
+tgravityacc-std()-x	Standard deviation of gravity acceleration time signal in x dimension
+tgravityacc-std()-y	Standard deviation of gravity acceleration time signal in y dimension
+tgravityacc-std()-z	Standard deviation of gravity acceleration time signal in z dimension
+tbodyaccjerk-mean()-x	Mean bodily jerkacceleration time signal in x dimension
+tbodyaccjerk-mean()-y	Mean bodily jerk acceleration time signal in y dimension
+tbodyaccjerk-mean()-z	Mean bodily jerk acceleration time signal in z dimension
+tbodyaccjerk-std()-x	Standard deviation of bodily jerk acceleration time signal in x dimension
+tbodyaccjerk-std()-y	Standard deviation of bodily jerk acceleration time signal in y dimension
+tbodyaccjerk-std()-z	Standard deviation of bodily jerk acceleration time signal in z dimension
+tbodygyro-mean()-x	Mean gyroscopic acceleration time signal in x dimension
+tbodygyro-mean()-y	Mean gyroscopic acceleration time signal in y dimension
+tbodygyro-mean()-z	Mean gyroscopic acceleration time signal in z dimension
+tbodygyro-std()-x	Standard deviation of gyroscopic acceleration time signal in x dimension
+tbodygyro-std()-y	Standard deviation of gyroscopic acceleration time signal in y dimension
+tbodygyro-std()-z	Standard deviation of gyroscopic acceleration time signal in z dimension
+tbodygyrojerk-mean()-x	Mean gyroscopic jerk acceleration time signal in x dimension
+tbodygyrojerk-mean()-y	Mean gyroscopic jerk acceleration time signal in y dimension
+tbodygyrojerk-mean()-z	Mean gyroscopic jerk acceleration time signal in z dimension
+tbodygyrojerk-std()-x	Standard deviation of gyroscopic jerk acceleration time signal in x dimension
+tbodygyrojerk-std()-y	Standard deviation of gyroscopic jerk acceleration time signal in y dimension
+tbodygyrojerk-std()-z	Standard deviation of gyroscopic jerk acceleration time signal in z dimension
+tbodyaccmag-mean()	Mean magnitude of bodily acceleration time signal
+tbodyaccmag-std()	Standard deviation of magnitude of bodily acceleration time signal
+tgravityaccmag-mean()	Mean magnitude of gravity acceleration time signal
+tgravityaccmag-std()	Standard deviation of magnitude of gravity acceleration time signal
+tbodyaccjerkmag-mean()	Mean magnitude of bodily jerk acceleration time signal
+tbodyaccjerkmag-std()	Standard deviation of magnitude of bodily jerk acceleration time signal
+tbodygyromag-mean()	Mean magnitude of gyroscopic bodily acceleration time signal
+tbodygyromag-std()	Standard deviation of magnitude of gyroscopic bodily acceleration time signal
+tbodygyrojerkmag-mean()	Mean magnitude of gyroscopic bodily jerk acceleration time signal
+tbodygyrojerkmag-std()	Standard deviation of magnitude of gyroscopic bodily jerk acceleration time signal
+fbodyacc-mean()-x	Fast Fourier Transform of mean bodily acceleration time signal in x dimension
+fbodyacc-mean()-y	Fast Fourier Transform of mean bodily acceleration time signal in y dimension
+fbodyacc-mean()-z	Fast Fourier Transform of mean bodily acceleration time signal in z dimension
+fbodyacc-std()-x	Fast Fourier Transform of standard deviation of bodily acceleration time signal in x dimension
+fbodyacc-std()-y	Fast Fourier Transform of standard deviation of bodily acceleration time signal in y dimension
+fbodyacc-std()-z	Fast Fourier Transform of standard deviation of bodily acceleration time signal in zdimension
+fbodyaccjerk-mean()-x	Fast Fourier Transform of mean bodily jerk acceleration time signal in x dimension
+fbodyaccjerk-mean()-y	Fast Fourier Transform of mean bodily jerk acceleration time signal in y dimension
+fbodyaccjerk-mean()-z	Fast Fourier Transform of mean bodily jerk acceleration time signal in z dimension
+fbodyaccjerk-std()-x	Fast Fourier Transform of standard deviation of bodily jerk acceleration time signal in x dimension
+fbodyaccjerk-std()-y	Fast Fourier Transform of standard deviation of bodily jerk acceleration time signal in y dimension
+fbodyaccjerk-std()-z	Fast Fourier Transform of standard deviation of bodily jerk acceleration time signal in zdimension
+fbodygyro-mean()-x	Fast Fourier Transform of mean bodily gyroscopic acceleration time signal in x dimension
+fbodygyro-mean()-y	Fast Fourier Transform of mean bodily gyroscopic acceleration time signal in y dimension
+fbodygyro-mean()-z	Fast Fourier Transform of mean bodily gyroscopic acceleration time signal in z dimension
+fbodygyro-std()-x	Fast Fourier Transform of standard deviation of bodily gyroscopic acceleration time signal in x dimension
+fbodygyro-std()-y	Fast Fourier Transform of standard deviation of bodily gyroscopic acceleration time signal in y dimension
+fbodygyro-std()-z	Fast Fourier Transform of standard deviation of bodily gyroscopic acceleration time signal in zdimension
+fbodyaccmag-mean()	Mean Fast Fourier Transform of mean bodily acceleration magnitude
+fbodyaccmag-std()	Standard deviation of Mean Fast Fourier Transform of mean bodily acceleration magnitude
+fbodybodyaccjerkmag-mean()	Mean Fast Fourier Transform of mean bodily acceleration jerk magnitude
+fbodybodyaccjerkmag-std()	Standard deviation of Mean Fast Fourier Transform of mean bodily acceleration jerk magnitude
+fbodybodygyromag-mean()	Mean Fast Fourier Transform of mean bodily gyroscopic magnitude
+fbodybodygyromag-std()	Standard deviation of Mean Fast Fourier Transform of mean bodily gyroscopic magnitude
+fbodybodygyrojerkmag-mean()	Mean Fast Fourier Transform of mean bodily gyroscopic jerk magnitude
+fbodybodygyrojerkmag-std()	Standard deviation of Mean Fast Fourier Transform of mean bodily gyroscopic jerk magnitude
